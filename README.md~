@@ -74,8 +74,8 @@ Usage: low_level_script.py [options]
 options:  
 -h : show options  
 -train dataset : define the training dataset (default DR1)  
-	DR1 -- DR1 as the training dataset  
-	DR2 -- DR2 as the training dataset  
+⋅⋅ DR1 -- DR1 as the training dataset  
+⋅⋅ DR2 -- DR2 as the training dataset  
 -test dataset : define test dataset (default DR2)  
 	DR1 -- DR1 as the test dataset  
 	DR2 -- DR2 as the test dataset  
