@@ -70,34 +70,34 @@ Before run the code, it's necessary to download the datasets and organize some d
 'low_level_script.py' Usage
 ============================
 ```
-Usage: low_level_script.py [options]  
-options:  
--h : show options  
--train dataset : define the training dataset (default DR1)  
-	DR1 -- DR1 as the training dataset  
-	DR2 -- DR2 as the training dataset  
--test dataset : define test dataset (default DR2)  
-	DR1 -- DR1 as the test dataset  
-	DR2 -- DR2 as the test dataset  
--l lesion : define a specific DR-related lesion (default [exsudato-duro, hemorragia-superficial, hemorragia-profunda, lesoes-vermelhas, mancha-algodonosa, drusas-maculares, imagem-normal])  
-	exsudato-duro		 -- Hard Exudates  
-	hemorragia-superficial	 -- Superficial Hemorrhages  
-	hemorragia-profunda	 -- Deep Hemorrhages  
-	lesoes-vermelhas	 -- Red Lesions  
-	mancha-algodonosa	 -- Cotton-wool Spots  
-	drusas-maculares	 -- Drusen  
-	imagem-normal		 -- Normal Images  
--low technique : define a specific low-level technique (default [sparse, dense])  
-	sparse -- Sparse low-level feature extraction  
-	dense  -- Dense low-level feature extraction  
--t1 threshold : define the threshold for trainig dataset (default 3500)  
--t2 threshold : define the threshold for test dataset (default 3500)  
--surf path : define the path to the surf algorithm (default ./ext/surf/surf.ln)  
+Usage: low_level_script.py [options]
+options:
+-h : show options
+-train dataset : define the training dataset (default DR1)
+	DR1 -- DR1 as the training dataset
+	DR2 -- DR2 as the training dataset
+-test dataset : define test dataset (default DR2)
+	DR1 -- DR1 as the test dataset
+	DR2 -- DR2 as the test dataset
+-l lesion : define a specific DR-related lesion (default [exsudato-duro, hemorragia-superficial, hemorragia-profunda, lesoes-vermelhas, mancha-algodonosa, drusas-maculares, imagem-normal])
+	exsudato-duro		 -- Hard Exudates
+	hemorragia-superficial	 -- Superficial Hemorrhages
+	hemorragia-profunda	 -- Deep Hemorrhages
+	lesoes-vermelhas	 -- Red Lesions
+	mancha-algodonosa	 -- Cotton-wool Spots
+	drusas-maculares	 -- Drusen
+	imagem-normal		 -- Normal Images
+-low technique : define a specific low-level technique (default [sparse, dense])
+	sparse -- Sparse low-level feature extraction
+	dense  -- Dense low-level feature extraction
+-t1 threshold : define the threshold for trainig dataset (default 3500)
+-t2 threshold : define the threshold for test dataset (default 3500)
+-surf path : define the path to the surf algorithm (default ./ext/surf/surf.ln)
 ```
 
 'create_codebooks.py' Usage
 ============================
-
+```
 Usage: create_codebooks.py [options]
 options:
 -h : show options
@@ -117,10 +117,11 @@ options:
 	dense  -- Dense low-level feature extraction
 -size s : length of the codebook (default 250 for sparse (resulting in a codebook of 500 codewords) and 125 for dense (resulting in a codebook of 1500 codewords))
 -kmeans path : define the path to the k-means algorithm (default ./ext/kmeans/kmltest)
+```
 
 'mid_level_script.py' Usage
 ============================
-
+```
 Usage: mid_level_script.py [options]
 options:
 -h : show options
@@ -144,6 +145,7 @@ options:
 	hard -- Hard-Sum coding/pooling
 	soft -- Soft-Max coding/pooling
 -i image : define the image name (used only for cases where we are interested in describing only one image)
+```
 
 'classification.py' Usage
 ============================
@@ -177,7 +179,7 @@ options:
 
 'classify_image.py' Usage
 ============================
-
+```
 Usage: classify_image.py [options]
 options:
 -h : show options
@@ -197,10 +199,11 @@ options:
 	soft -- Soft-Max coding/pooling
 -o offset : define a specific offset of the hyperplane (use only when select a specific DR-related lesion)
 -svm path : define the path to the svm algorithm (default ./ext/svm/)
+```
 
 'referral.py' Usage
 ============================
-
+```
 Usage: referral.py [options]
 options:
 -h : show options
@@ -212,6 +215,7 @@ options:
 	soft -- Soft-Max coding/pooling
 -svm path : define the path to the svm algorithm (default ./ext/svm/)
 -plot : use this parameter to plot the ROC curves (default False)
+```
 
 Tips on Practical Use
 ============================
